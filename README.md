@@ -5,26 +5,33 @@
 
 
 ## Instalacion
-
 Abrir el CMD  en esta ubicacion:
 
-\project-management-system-master\.venv\Scripts
+  \project-management-system-master\
 
 ejecutar:
 
-activate
+  python -m venv env
+
+despues Abrir el CMD  en esta ubicacion:
+
+  \project-management-system-master\.venv\Scripts
+
+ejecutar:
+
+  activate
 
 regresar a:
 
-\project-management-system-master\
+  \project-management-system-master\
 
 correr:
 
-pip install -r requirements.txt
+  pip install -r requirements.txt
 
 Despues:
 
-Python manage.py runserver
+  Python manage.py runserver
 
 ## Features
 
