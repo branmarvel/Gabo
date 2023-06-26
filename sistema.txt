@@ -1,0 +1,7 @@
+Modulos del sistema: Login / Proyectos (adminitracion) / Presupuesto / Estadisticas
+
+Login: Forma de entrar al sistema; Debe tener un formulario para crear a la persona que usara el sistema (con nombre, apellido, telefono, direccion). Despues debe existir otro formulario que permita registrar un usuario. debe tener otro formulario para poder ingresar al sistema.
+
+Proyectos (administracion): aqui debe ir todo lo referente a la creacion de proyectos (solo proyectos) donde tienen 
+
+Presupuesto: Por periodo (es decir,el presupuesto de 1 año) / y por gatos por proyecto
