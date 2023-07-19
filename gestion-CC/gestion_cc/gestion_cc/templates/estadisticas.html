@@ -1,0 +1,11 @@
+<!-- estadisticas.html -->
+
+{% extends 'base.html' %} {% block content %}
+<h1>Estadísticas</h1>
+
+<p>Total de proyectos: {{ data.total_proyectos }}</p>
+<p>Proyectos completados: {{ data.proyectos_completados }}</p>
+<p>Proyectos en progreso: {{ data.proyectos_en_progreso }}</p>
+<p>Porcentaje de proyectos completados: {{ data.porcentaje_completados }}%</p>
+
+{% endblock %}

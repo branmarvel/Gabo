@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 
 class RegistrationForm(UserCreationForm):
-    email = forms.EmailField(label='E-mail', required=True)
+    email = forms.EmailField(label='Correo electrónico', required=True)
     company = forms.ModelChoiceField(queryset=Comp.objects.all())
 
     class Meta:
@@ -21,9 +21,9 @@ class RegistrationForm(UserCreationForm):
         }
 
         labels = {
-            'first_name': 'Name',
-            'last_name': 'Last Name',
-            'company': 'Company',
+            'first_name': 'Nombre',
+            'last_name': 'Apellido',
+            'company': 'Empresa',
         }
 
     def save(self, commit=True):
@@ -44,26 +44,26 @@ class RegistrationForm(UserCreationForm):
     def __init__(self, *args, **kwargs):
         super(RegistrationForm, self).__init__(*args, **kwargs)
         self.fields['username'].widget.attrs['class'] = 'form-control'
-        self.fields['username'].widget.attrs['placeholder'] = 'Username'
+        self.fields['username'].widget.attrs['placeholder'] = 'Nombre de usuario'
         self.fields['first_name'].widget.attrs['class'] = 'form-control'
-        self.fields['first_name'].widget.attrs['placeholder'] = 'First name'
+        self.fields['first_name'].widget.attrs['placeholder'] = 'Nombre'
         self.fields['last_name'].widget.attrs['class'] = 'form-control'
-        self.fields['last_name'].widget.attrs['placeholder'] = 'Last name'
+        self.fields['last_name'].widget.attrs['placeholder'] = 'Apellido'
         self.fields['email'].widget.attrs['class'] = 'form-control'
-        self.fields['email'].widget.attrs['placeholder'] = 'E-mail'
+        self.fields['email'].widget.attrs['placeholder'] = 'Correo electrónico'
         self.fields['password1'].widget.attrs['class'] = 'form-control'
-        self.fields['password1'].widget.attrs['placeholder'] = 'Password'
+        self.fields['password1'].widget.attrs['placeholder'] = 'Contraseña'
         self.fields['password2'].widget.attrs['class'] = 'form-control'
-        self.fields['password2'].widget.attrs['placeholder'] = 'Retype Password'
+        self.fields['password2'].widget.attrs['placeholder'] = 'Confirmar contraseña'
         self.fields['company'].widget.attrs['class'] = 'form-control'
 
 
 class CompanyRegistrationForm(forms.Form):
-    social_name = forms.CharField(max_length=80)
-    name = forms.CharField(max_length=80)
-    email = forms.EmailField()
-    city = forms.CharField(max_length=50)
-    found_date = forms.DateField()
+    social_name = forms.CharField(max_length=80, label='Nombre Social')
+    name = forms.CharField(max_length=80, label='Nombre')
+    email = forms.EmailField(label='Correo electrónico')
+    city = forms.CharField(max_length=50, label='Ciudad')
+    found_date = forms.DateField(label='Fecha de fundación')
 
     class Meta:
         model = Comp
@@ -84,19 +84,19 @@ class CompanyRegistrationForm(forms.Form):
     def __init__(self, *args, **kwargs):
         super(CompanyRegistrationForm, self).__init__(*args, **kwargs)
         self.fields['social_name'].widget.attrs['class'] = 'form-control'
-        self.fields['social_name'].widget.attrs['placeholder'] = 'Social Name'
+        self.fields['social_name'].widget.attrs['placeholder'] = 'Nombre Social'
         self.fields['name'].widget.attrs['class'] = 'form-control'
-        self.fields['name'].widget.attrs['placeholder'] = 'Name'
+        self.fields['name'].widget.attrs['placeholder'] = 'Nombre'
         self.fields['email'].widget.attrs['class'] = 'form-control'
-        self.fields['email'].widget.attrs['placeholder'] = 'Email'
+        self.fields['email'].widget.attrs['placeholder'] = 'Correo electrónico'
         self.fields['city'].widget.attrs['class'] = 'form-control'
-        self.fields['city'].widget.attrs['placeholder'] = 'City'
+        self.fields['city'].widget.attrs['placeholder'] = 'Ciudad'
         self.fields['found_date'].widget.attrs['class'] = 'form-control'
-        self.fields['found_date'].widget.attrs['placeholder'] = 'Found date'
+        self.fields['found_date'].widget.attrs['placeholder'] = 'Fecha de fundación'
 
 
 class ProfilePictureForm(forms.Form):
-    img = forms.ImageField()
+    img = forms.ImageField(label='Imagen')
     class Meta:
         model = UserProfile
         fields = ['img']

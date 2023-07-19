@@ -1,0 +1,31 @@
+Modulos del sistema: Login / Proyectos (adminitracion) / Presupuesto / Periodo / Estadisticas
+
+* Login: Forma de entrar al sistema; Debe tener un formulario para crear a la persona que usara el sistema (con nombre, apellido, telefono, direccion). Despues debe existir otro formulario que permita registrar un usuario. debe tener otro formulario para poder ingresar al sistema.
+
+* Proyectos (administracion): aqui debe ir todo lo referente a la creacion de proyectos (solo proyectos). Como trello, debe haber un input que permita escribir el nombre del proyecto, y posteriormente, al darle click al boton de crear, aparezca una tarjeta (boton, o lo que sea) que permita modificar los datos del proyecto en un formulario. 
+
+Los datos del proyecto son: 
+
++ Creador del proyecto
++ Encargado del proyecto
++ Descripcion del proyecto
++ Area a la que va destinada (salud, cultura, deporte, etc)
++ Finalidad del proyecto
++ Presupuesto estimado
++ Fecha de Inicio
++ Fecha de culminacion
+
+A su vez, en caso de que llegue a pasar la fecha de culminacion, debe saltar un aviso que permita: o culminar el proyecto, o darle un tiempo de prorroga
+Por ende, si hay tiempo de prorroga, debe tambien haber algo que permita modificar el presupuesto que se ha usado (y se usara)
+
+* Presupuesto: Los presupuestos deben ser por periodo (es decir, el presupuesto de 1 año entero) / y por gatos por proyecto. En este apartado deben verse dos cosas, primero, el presupuesto que habra disponible en ese año. Y al lado deben salir los gastos que consumen los proyectos del presupuesto.
+
+O sea que, si mi presupuesto es de 30, y tengo un proyecto de 15, automaticamente el 30 debe restase
+
+* Periodo: Basicamente es el tiempo que abarcara un periodo
+
+* Estadisticas: Se saca facil de la base de datos. Deben mostrarse elementos como:
+
++ La cantidad de proyectos propuestos por mes
++ Promedio de proyectos aprobados / rechazados por mes
++ Promedio de tiempo empleado en proyectos

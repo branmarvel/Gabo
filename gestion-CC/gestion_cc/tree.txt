@@ -1,0 +1,59 @@
+Listado de rutas de carpetas
+El n£mero de serie del volumen es F037-F73F
+F:.
+|   db.sqlite3
+|   listar.txt
+|   manage.py
+|   tree.txt
+|   
+\---gestion_cc
+    |   .pylintrc
+    |   admin.py
+    |   apps.py
+    |   asgi.py
+    |   forms.py
+    |   lista.txt
+    |   models.py
+    |   settings.py
+    |   urls.py
+    |   views.py
+    |   wsgi.py
+    |   __init__.py
+    |   
+    +---migrations
+    |   |   0001_initial.py
+    |   |   __init__.py
+    |   |   
+    |   \---__pycache__
+    |           0001_initial.cpython-311.pyc
+    |           __init__.cpython-311.pyc
+    |           
+    +---templates
+    |   |   base.html
+    |   |   estadisticas.html
+    |   |   
+    |   +---presupuestos
+    |   |       modificar_presupuesto.html
+    |   |       presupuesto_detalle.html
+    |   |       presupuesto_list.html
+    |   |       
+    |   +---proyectos
+    |   |       crear_proyecto.html
+    |   |       proyectos_list.html
+    |   |       proyecto_detail.html
+    |   |       
+    |   \---registration
+    |           login.html
+    |           register.html
+    |           
+    \---__pycache__
+            admin.cpython-311.pyc
+            apps.cpython-311.pyc
+            forms.cpython-311.pyc
+            models.cpython-311.pyc
+            settings.cpython-311.pyc
+            urls.cpython-311.pyc
+            views.cpython-311.pyc
+            wsgi.cpython-311.pyc
+            __init__.cpython-311.pyc
+            

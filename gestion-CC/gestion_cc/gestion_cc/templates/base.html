@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tu título</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tu sitio web</h1>
+      <nav>
+        <ul>
+          <li><a href="{% url 'proyectos_list' %}">Proyectos</a></li>
+          <li><a href="{% url 'presupuesto_list' %}">Presupuesto</a></li>
+          <li><a href="{% url 'estadisticas' %}">Estadísticas</a></li>
+          <li><a href="{% url 'login' %}">Iniciar sesión</a></li>
+          <li><a href="{% url 'register' %}">Registrarse</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>{% block content %} {% endblock %}</main>
+
+    <footer>
+      <p>Tu pie de página</p>
+    </footer>
+  </body>
+</html>

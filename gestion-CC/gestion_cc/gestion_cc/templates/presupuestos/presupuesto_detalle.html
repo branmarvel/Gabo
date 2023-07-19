@@ -1,0 +1,10 @@
+<h1>Detalle de Presupuesto</h1>
+
+<p>Presupuesto ID: {{ presupuesto.idPresupuesto }}</p>
+<p>Cantidad Presupuesto: {{ presupuesto.cantidad_presupuesto }}</p>
+<!-- Agrega aquí otros campos del presupuesto que desees mostrar -->
+
+<a
+  href="{% url 'modificar_presupuesto' presupuesto_id=presupuesto.idPresupuesto %}"
+  >Modificar presupuesto</a
+>

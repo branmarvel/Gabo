@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskManager | {% block extra_title %}  {% endblock %} </title>
+</head>
+<body style="display: flex; justify-content: center; align-items: center;">
+  <div >
+    <div >
+    <h1>welcome {{request.user}} </h1>
+    <button><a href="{% url 'dashboard' %}">HOME</a></button> 
+    <button><a href="{% url 'create_list_form' %}">Add New Task&#x2b;</a></button>
+    <button><a href="{% url 'signout' %}">signout</a> </button> 
+  </div>
+    
+    <h3  style="display: flex; justify-content: center; align-items: center;"> {% block heading %}  {% endblock %}  </h3>
+    {% block content %}  {% endblock %}
+  </div>
+</body>
+</html>

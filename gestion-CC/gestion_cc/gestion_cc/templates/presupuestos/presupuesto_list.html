@@ -1,0 +1,10 @@
+<!-- presupuesto_list.html -->
+
+{% extends 'base.html' %} {% block content %}
+<h2>Listado de presupuestos</h2>
+<ul>
+  {% for presupuesto in presupuestos %}
+  <li>{{ presupuesto }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}

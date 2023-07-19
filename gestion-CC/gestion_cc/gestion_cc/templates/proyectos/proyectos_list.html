@@ -1,0 +1,14 @@
+<!-- proyectos_list.html -->
+
+{% extends 'base.html' %} {% block content %}
+<h2>Listado de proyectos</h2>
+<ul>
+  {% for proyecto in proyectos %}
+  <li>
+    <a href="{% url 'proyecto_detail' proyecto.id %}"
+      >{{ proyecto.definicion_proyecto }}</a
+    >
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

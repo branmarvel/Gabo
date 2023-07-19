@@ -1,0 +1,12 @@
+<!-- proyecto_detail.html -->
+
+{% extends 'base.html' %} {% block content %}
+<h2>{{ proyecto.definicion_proyecto }}</h2>
+<p>Área destinada: {{ proyecto.area_destinada }}</p>
+<p>Finalidad: {{ proyecto.finalidad }}</p>
+<p>Presupuesto estimado: {{ proyecto.presupuesto_estimado }}</p>
+<p>Fecha de inicio: {{ proyecto.fecha_inicio }}</p>
+<p>Fecha de culminación: {{ proyecto.fecha_culminacion }}</p>
+<p>Estado del proyecto: {{ proyecto.estado_proyecto }}</p>
+<p>Porcentaje completado: {{ proyecto.porcentaje_completado }}</p>
+{% endblock %}

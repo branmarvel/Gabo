@@ -1,0 +1,15 @@
+.pylintrc
+admin.py
+apps.py
+asgi.py
+forms.py
+lista.txt
+migrations
+models.py
+settings.py
+templates
+urls.py
+views.py
+wsgi.py
+__init__.py
+__pycache__

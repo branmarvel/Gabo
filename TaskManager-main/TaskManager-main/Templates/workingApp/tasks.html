@@ -1,0 +1,15 @@
+{% extends "workingApp/base.html" %}
+{% load markdown_deux_tags %}
+{% block extra_title %} Tasks {% endblock%}
+{% block heading %} {{ taskName }} {% endblock %} 
+{% block content %}
+<button><a href="{% url 'update_list' taskId %}">update</a></button>
+<button><a href="{% url 'delete_list' taskId %}">delete</a></button>
+  {% for task in tasks %}
+  <sub> description now supports <a href="https://stackedit.io/app#">MarkDown formatting</a></sub>
+<p>Description:{{ task.desc |markdown }}</p> 
+<br><p>Deadline : {{task.deadline}}</p>
+<p>Task status : {% if stat is True %} Completed {% else %} Incomplete {% endif %}</p>
+<p>Created : {{task.created_at}}</p>
+  {% endfor %}
+{% endblock %}

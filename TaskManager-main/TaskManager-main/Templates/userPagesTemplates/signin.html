@@ -1,0 +1,16 @@
+{% extends "userPagesTemplates/base.html" %}
+
+{% block title %}
+signin
+{% endblock%}
+{% block content %}
+<a href="{% url 'signup' %}">signup</a>
+<h1>signin</h1>
+{#<p><label for="username"><input type="text" name="username"></label></p>#}
+{#<p><label for="password"><input type="password" name="password"></label></p>#}
+{% endblock%}
+
+{# {% for message in messages %} #}
+{# {{message}} #}
+{# {% endfor %} #}
+{# while using inbuilt loginView we dont have to explicitly pass the messages #}
